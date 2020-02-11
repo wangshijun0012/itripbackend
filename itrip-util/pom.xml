@@ -11,12 +11,40 @@
 
     <artifactId>itrip-util</artifactId>
     <packaging>jar</packaging>
-
+    <repositories>
+        <!--设置远程镜像仓库为阿里云的中心仓库-->
+        <repository>
+            <id>alimaven</id>
+            <name>Maven Aliyun Mirror</name>
+            <url>http://maven.aliyun.com/nexus/content/repositories/central/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>cn.itrip</groupId>
             <artifactId>itrip-beans</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.belerweb</groupId>
+            <artifactId>pinyin4j</artifactId>
+            <version>2.5.1</version>
+        </dependency>
+        <dependency>
+            <groupId> cz.mallat.uasparser</groupId>
+            <artifactId>uasparser</artifactId>
+            <version>0.6.0</version>
         </dependency>
     </dependencies>
 
