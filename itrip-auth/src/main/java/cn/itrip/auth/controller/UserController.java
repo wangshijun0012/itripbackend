@@ -1,10 +1,8 @@
 package cn.itrip.auth.controller;
-
-        import cn.itrip.auth.serivice.TokenService;
         import cn.itrip.auth.serivice.UserService;
         import cn.itrip.beans.dto.Dto;
         import cn.itrip.beans.pojo.ItripUser;
-        import cn.itrip.beans.vo.ItripTokenVO;
+        import cn.itrip.beans.vo.userinfo.ItripUserVO;
         import cn.itrip.common.DtoUtil;
         import cn.itrip.common.ErrorCode;
         import cn.itrip.common.MD5;
@@ -16,76 +14,16 @@ package cn.itrip.auth.controller;
         import org.springframework.web.bind.annotation.ResponseBody;
 
         import javax.annotation.Resource;
-        import javax.servlet.http.HttpServletRequest;
-        import java.lang.reflect.Array;
-        import java.util.ArrayList;
-        import java.util.Calendar;
+        import java.util.regex.Pattern;
 
 @Controller
 @RequestMapping("/api")
 public class UserController {
     @Resource
     private UserService userService;
-    @Resource
-    private TokenService tokenService;
-    @RequestMapping(value = "/dologin",method = RequestMethod.POST)
-    @ResponseBody
-    public Dto dologin(String name , String password, HttpServletRequest request) {
-        ItripUser user = null;
-        try {
-            user = userService.login(name, MD5.getMd5(password,32));
-            if(user == null){
-                return DtoUtil.returnFail("用户名密码错误", ErrorCode.AUTH_AUTHENTICATION_FAILED);
-            }
-            //获得浏览器请求头中的User-Agent
-            String userAgent =request.getHeader("user-agent");
-            //登陆成功，生成token
-            String token = tokenService.generateToken(userAgent,user);
-            //保存token到redis
-            tokenService.savaToken(token,user);
-            //返回一个vo对象
-            ItripTokenVO vo = new ItripTokenVO(token, Calendar.getInstance().getTimeInMillis() + 2*60*60 ,Calendar.getInstance().getTimeInMillis());
-            return DtoUtil.returnSuccess("登陆成功",vo);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return DtoUtil.returnFail(e.getMessage(),ErrorCode.AUTH_UNKNOWN);
-        }
-    }
-    @RequestMapping(value = "/logout",method = RequestMethod.POST,headers = "token")
-    @ResponseBody
-    public Dto logout(HttpServletRequest request){
-        String userAgent = request.getHeader("user-agent");
-        String token = request.getHeader("token");
-        try {
-            if(tokenService.validateToken(userAgent,token)){
-                tokenService.delToken(token);
-                return DtoUtil.returnSuccess("退出成功");
-            }else{
-                return DtoUtil.returnFail("token无效",ErrorCode.AUTH_TOKEN_INVALID);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return DtoUtil.returnFail("退出失败",ErrorCode.AUTH_PARAMETER_ERROR);
-    }
-    @RequestMapping(value = "/reloadToken",method = RequestMethod.POST,headers = "token")
-    @ResponseBody
-    public Dto reloadToken(HttpServletRequest request){
-        String userAgent = request.getHeader("user-agent");
-        String token = request.getHeader("token");
-        try {
-            Boolean isReloadToken = tokenService.reloadToken(userAgent, token);
-            if(!isReloadToken){
-                return DtoUtil.returnFail("置换失败",ErrorCode.AUTH_TOKEN_INVALID);
-            }
-            return DtoUtil.returnSuccess("置换成功",token);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return DtoUtil.returnFail("置换错误",ErrorCode.AUTH_UNKNOWN);
-    }
     @RequestMapping(value = "/doLoginMessage",method = RequestMethod.POST)
     @ResponseBody
+    //参数1：接受验证码的手机号，参数2：验证码内容，参数3：验证码有效时间（分钟）
     public Dto sendLoginMessage(String mobilPhoneNum,String data1,String data2){
         boolean isSended = SMSUtil.sendSMS(mobilPhoneNum,"1", new String[]{data1,data2});
         if(isSended){
@@ -93,5 +31,42 @@ public class UserController {
         }else{
             return DtoUtil.returnFail("发送失败",ErrorCode.AUTH_UNKNOWN);
         }
+    }
+    @RequestMapping(value = "/registerbyphone" ,method = RequestMethod.POST)
+    @ResponseBody
+    public Dto registerByPhone(@RequestBody ItripUserVO vo){
+        if(!validatePhone(vo.getUserCode())){
+            return DtoUtil.returnFail("请输入正确的手机号",ErrorCode.AUTH_ACTIVATE_FAILED);
+        }
+        ItripUser user = new ItripUser();
+        user.setUserCode(vo.getUserCode());
+        user.setUserName(vo.getUserName());
+        user.setUserPassword(MD5.getMd5(vo.getUserPassword(),32));
+        try {
+            if(userService.findByUserCode(user.getUserCode()) != null){
+                return DtoUtil.returnFail("用户已存在",ErrorCode.AUTH_ILLEGAL_USERCODE);
+            }
+            userService.createUserByPhone(user);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("发送验证码失败");
+        }
+        return DtoUtil.returnSuccess("发送验证码成功",user);
+    }
+    private Boolean validatePhone(String phoneNum){
+        String reg = "^1[356789]\\d{9}$";
+        return Pattern.compile(reg).matcher(phoneNum).find();
+    }
+    @RequestMapping(value = "/validatephone",method = RequestMethod.POST)
+    @ResponseBody
+    public Dto validatePhone(String user,String code){
+        try {
+            if(userService.validatePhone(user, code)){
+                return DtoUtil.returnSuccess("验证成功");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return DtoUtil.returnFail("验证失败",ErrorCode.AUTH_ACTIVATE_FAILED);
     }
 }

@@ -57,10 +57,10 @@
                     <if test="userPassword != null and userPassword!=''">
                         and userPassword=#{userPassword}
                     </if>
-                    <if test="userType != null and userType!=''">
+                    <if test="userType != null and userType!='' ">
                         and userType=#{userType}
                     </if>
-                    <if test="flatID != null and flatID!=''">
+                    <if test="flatID != null and flatID!='' ">
                         and flatID=#{flatID}
                     </if>
                     <if test="userName != null and userName!=''">
@@ -193,10 +193,10 @@
                     <if test="userPassword != null and userPassword!=''">
                         userPassword=#{userPassword},
                     </if>
-                    <if test="userType != null and userType!=''">
+                    <if test="userType != null ">
                         userType=#{userType},
                     </if>
-                    <if test="flatID != null and flatID!=''">
+                    <if test="flatID != null ">
                         flatID=#{flatID},
                     </if>
                     <if test="userName != null and userName!=''">
