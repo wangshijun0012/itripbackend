@@ -8,6 +8,7 @@ package cn.itrip.auth.controller;
         import cn.itrip.common.DtoUtil;
         import cn.itrip.common.ErrorCode;
         import cn.itrip.common.MD5;
+        import cn.itrip.common.SMSUtil;
         import org.springframework.stereotype.Controller;
         import org.springframework.web.bind.annotation.RequestBody;
         import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,8 @@ package cn.itrip.auth.controller;
 
         import javax.annotation.Resource;
         import javax.servlet.http.HttpServletRequest;
+        import java.lang.reflect.Array;
+        import java.util.ArrayList;
         import java.util.Calendar;
 
 @Controller
@@ -47,6 +50,48 @@ public class UserController {
             e.printStackTrace();
             return DtoUtil.returnFail(e.getMessage(),ErrorCode.AUTH_UNKNOWN);
         }
-
+    }
+    @RequestMapping(value = "/logout",method = RequestMethod.POST,headers = "token")
+    @ResponseBody
+    public Dto logout(HttpServletRequest request){
+        String userAgent = request.getHeader("user-agent");
+        String token = request.getHeader("token");
+        try {
+            if(tokenService.validateToken(userAgent,token)){
+                tokenService.delToken(token);
+                return DtoUtil.returnSuccess("退出成功");
+            }else{
+                return DtoUtil.returnFail("token无效",ErrorCode.AUTH_TOKEN_INVALID);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return DtoUtil.returnFail("退出失败",ErrorCode.AUTH_PARAMETER_ERROR);
+    }
+    @RequestMapping(value = "/reloadToken",method = RequestMethod.POST,headers = "token")
+    @ResponseBody
+    public Dto reloadToken(HttpServletRequest request){
+        String userAgent = request.getHeader("user-agent");
+        String token = request.getHeader("token");
+        try {
+            Boolean isReloadToken = tokenService.reloadToken(userAgent, token);
+            if(!isReloadToken){
+                return DtoUtil.returnFail("置换失败",ErrorCode.AUTH_TOKEN_INVALID);
+            }
+            return DtoUtil.returnSuccess("置换成功",token);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return DtoUtil.returnFail("置换错误",ErrorCode.AUTH_UNKNOWN);
+    }
+    @RequestMapping(value = "/doLoginMessage",method = RequestMethod.POST)
+    @ResponseBody
+    public Dto sendLoginMessage(String mobilPhoneNum,String data1,String data2){
+        boolean isSended = SMSUtil.sendSMS(mobilPhoneNum,"1", new String[]{data1,data2});
+        if(isSended){
+            return DtoUtil.returnSuccess("发送成功");
+        }else{
+            return DtoUtil.returnFail("发送失败",ErrorCode.AUTH_UNKNOWN);
+        }
     }
 }
