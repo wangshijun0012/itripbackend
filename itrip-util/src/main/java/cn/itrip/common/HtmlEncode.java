@@ -6,9 +6,9 @@ package cn.itrip.common;
  */
 public class HtmlEncode {
 	public static String htmlEncode(String string) {
-		if(null == string || "".equals(string))
+		if (null == string || "".equals(string)) {
 			return null;
-		else{
+		} else {
 			String result = string;
 			result = result.replaceAll("&", "&amp;");
 			result = result.replaceAll("<", "&lt;");
@@ -18,9 +18,9 @@ public class HtmlEncode {
 		}
 	}
 	public static String htmlDecode(String string) {
-		if(null == string || "".equals(string))
+		if (null == string || "".equals(string)) {
 			return null;
-		else{
+		} else {
 			String result = string;
 			result = result.replaceAll("&amp;", "&");
 			result = result.replaceAll("&lt;", "<");

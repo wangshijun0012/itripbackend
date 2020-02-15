@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 public class TokenController {
     @Resource
     private TokenService tokenService;
-    @RequestMapping(value = "/reloadToken",method = RequestMethod.POST,headers = "token")
+    @RequestMapping(value = "/retoken",method = RequestMethod.POST,headers = "token")
     @ResponseBody
     public Dto reloadToken(HttpServletRequest request){
         String userAgent = request.getHeader("user-agent");

@@ -47,7 +47,7 @@ public class LoginController {
             return DtoUtil.returnFail(e.getMessage(),ErrorCode.AUTH_UNKNOWN);
         }
     }
-    @RequestMapping(value = "/logout",method = RequestMethod.POST,headers = "token")
+    @RequestMapping(value = "/logout",method = RequestMethod.GET,headers = "token")
     @ResponseBody
     public Dto logout(HttpServletRequest request){
         String userAgent = request.getHeader("user-agent");

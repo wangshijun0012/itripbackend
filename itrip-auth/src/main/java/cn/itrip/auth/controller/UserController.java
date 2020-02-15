@@ -34,14 +34,14 @@ public class UserController {
     }
     @RequestMapping(value = "/registerbyphone" ,method = RequestMethod.POST)
     @ResponseBody
-    public Dto registerByPhone(@RequestBody ItripUserVO vo){
-        if(!validatePhone(vo.getUserCode())){
+    public Dto registerByPhone(@RequestBody ItripUserVO userVO){
+        if(!validatePhone(userVO.getUserCode())){
             return DtoUtil.returnFail("请输入正确的手机号",ErrorCode.AUTH_ACTIVATE_FAILED);
         }
         ItripUser user = new ItripUser();
-        user.setUserCode(vo.getUserCode());
-        user.setUserName(vo.getUserName());
-        user.setUserPassword(MD5.getMd5(vo.getUserPassword(),32));
+        user.setUserCode(userVO.getUserCode());
+        user.setUserName(userVO.getUserName());
+        user.setUserPassword(MD5.getMd5(userVO.getUserPassword(),32));
         try {
             if(userService.findByUserCode(user.getUserCode()) != null){
                 return DtoUtil.returnFail("用户已存在",ErrorCode.AUTH_ILLEGAL_USERCODE);
@@ -57,7 +57,11 @@ public class UserController {
         String reg = "^1[356789]\\d{9}$";
         return Pattern.compile(reg).matcher(phoneNum).find();
     }
-    @RequestMapping(value = "/validatephone",method = RequestMethod.POST)
+    private boolean validateMail(String email){
+        String regex="^\\s*\\w+(?:\\.{0,1}[\\w-]+)*@[a-zA-Z0-9]+(?:[-.][a-zA-Z0-9]+)*\\.[a-zA-Z]+\\s*$"  ;
+        return Pattern.compile(regex).matcher(email).find();
+    }
+    @RequestMapping(value = "/validatephone",method = RequestMethod.PUT)
     @ResponseBody
     public Dto validatePhone(String user,String code){
         try {
@@ -69,4 +73,54 @@ public class UserController {
         }
         return DtoUtil.returnFail("验证失败",ErrorCode.AUTH_ACTIVATE_FAILED);
     }
+    @RequestMapping(value = "/ckusr",method=RequestMethod.GET)
+    @ResponseBody
+    public Dto checkUser(String name){
+        try {
+            if(null == userService.findByUserCode(name)){
+                return DtoUtil.returnSuccess("用户名可用");
+            }else{
+                return DtoUtil.returnFail("用户已存在，注册失败",ErrorCode.AUTH_USER_ALREADY_EXISTS);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return DtoUtil.returnFail(e.getMessage(),ErrorCode.AUTH_UNKNOWN);
+        }
+    }
+    @RequestMapping(value ="/activate" ,method = RequestMethod.PUT)
+    @ResponseBody
+    public Dto activateMail(String user,String code){
+        try {
+            if(userService.validateMail(user,code)){
+                return DtoUtil.returnSuccess("激活成功");
+            }else{
+                return DtoUtil.returnFail("激活失败",ErrorCode.AUTH_ACTIVATE_FAILED);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    @RequestMapping(value = "/doregister",method = RequestMethod.POST)
+    @ResponseBody
+    public Dto registerByMail(@RequestBody ItripUserVO userVO){
+        if(!validateMail(userVO.getUserCode())){
+            return DtoUtil.returnFail("邮箱地址不正确",ErrorCode.AUTH_PARAMETER_ERROR);
+        }
+        ItripUser user = new ItripUser();
+        user.setUserCode(userVO.getUserCode());
+        user.setUserName(userVO.getUserName());
+        if(userService.findByUserCode(user.getUserCode()) != null){
+            return DtoUtil.returnFail("邮箱已被注册",ErrorCode.AUTH_USER_ALREADY_EXISTS);
+        }
+        user.setUserPassword(MD5.getMd5(userVO.getUserPassword(),32));
+        try {
+            userService.createUserByMail(user);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("创建用户失败");
+        }
+        return DtoUtil.returnSuccess("发送邮箱成功");
+    }
+
 }

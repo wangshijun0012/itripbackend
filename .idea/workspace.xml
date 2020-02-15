@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="itrip-auth:war exploded" />
+      <artifact name="itrip-biz:war exploded" />
+      <artifact name="itrip-search:war exploded" />
+      <artifact name="itrip-trade:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ce51f438-54fb-4b4d-a8b2-9afd93b720ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/itripbackend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/MailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/TokenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/TokenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/SmsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/SmsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/SmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/SmsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/TokenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/TokenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/resources/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/resources/springmvc-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-util/src/main/java/cn/itrip/common/EmptyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-util/src/main/java/cn/itrip/common/EmptyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-util/src/main/java/cn/itrip/common/HtmlEncode.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-util/src/main/java/cn/itrip/common/HtmlEncode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-util/src/main/java/cn/itrip/common/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-util/src/main/java/cn/itrip/common/MD5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="itripbackend" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="ApplicationContext.xml" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven\repository" />
+        <option name="userSettingsFile" value="D:\maven\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XQR27oOad3P8nni9IAWkxo6yZp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-dao\src\main\java\cn\itrip" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-beans\src\main\java\cn\itrip\beans" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-auth\src\main\resources" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-util\src\main\resources" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-util\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-auth\src\main\resources" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-dao\src\main\java\cn\itrip\dao" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-util\src\main\java\cn\itrip\common" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-auth\target\classes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.29">
+    <configuration name="MD5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itrip.common.MD5" />
+      <module name="itrip-util" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itrip.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserAgentUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itrip.common.UserAgentUtil" />
+      <module name="itrip-util" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itrip.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itrip-auth" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testService.testIt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itrip-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itrip.auth.serivice.testService" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.itrip.auth.serivice" />
+      <option name="MAIN_CLASS_NAME" value="cn.itrip.auth.serivice.testService" />
+      <option name="METHOD_NAME" value="testIt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itrip-auth" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.29" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="13" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="itrip-auth:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/auth" />
+          </settings>
+        </artifact>
+        <artifact name="itrip-biz:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/biz" />
+          </settings>
+        </artifact>
+        <artifact name="itrip-search:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/search" />
+          </settings>
+        </artifact>
+        <artifact name="itrip-trade:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/trade" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_itripbackend" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54675" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="itrip-auth:war exploded" />
+          <artifact name="itrip-biz:war exploded" />
+          <artifact name="itrip-search:war exploded" />
+          <artifact name="itrip-trade:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MD5" />
+      <item itemvalue="Application.UserAgentUtil" />
+      <item itemvalue="JUnit.test" />
+      <item itemvalue="JUnit.test.test01" />
+      <item itemvalue="JUnit.testService.testIt" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.29" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test" />
+        <item itemvalue="JUnit.testService.testIt" />
+        <item itemvalue="Application.UserAgentUtil" />
+        <item itemvalue="Application.MD5" />
+        <item itemvalue="JUnit.test.test01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.11338798" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Tomcat 9.0.29" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\wangshijun\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce51f438-54fb-4b4d-a8b2-9afd93b720ed" name="Default Changelist" comment="" />
+      <created>1580976121974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580976121974</updated>
+      <workItem from="1580976124476" duration="7677000" />
+      <workItem from="1581050468775" duration="855000" />
+      <workItem from="1581052777490" duration="7364000" />
+      <workItem from="1581076509875" duration="605000" />
+      <workItem from="1581135622763" duration="2988000" />
+      <workItem from="1581219776095" duration="9933000" />
+      <workItem from="1581299149869" duration="17506000" />
+      <workItem from="1581384576723" duration="18589000" />
+      <workItem from="1581466963828" duration="8355000" />
+      <workItem from="1581487659792" duration="510000" />
+      <workItem from="1581488187489" duration="722000" />
+      <workItem from="1581488926716" duration="6925000" />
+      <workItem from="1581553211543" duration="20661000" />
+      <workItem from="1581640119122" duration="6613000" />
+      <workItem from="1581658129979" duration="11946000" />
+      <workItem from="1581738590418" duration="9545000" />
+      <workItem from="1581748204413" duration="1859000" />
+      <workItem from="1581750456613" duration="7228000" />
+    </task>
+    <task id="LOCAL-00001" summary="多模块搭建">
+      <created>1580984351322</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580984351323</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.登录系统的token生成与存放">
+      <created>1581395425308</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581395425308</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1.退出登录Token的销毁，以及Token的过期时间的更新&#10;2.做了验证短信的测试接口">
+      <created>1581570620609</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581570620609</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.完善了短信验证接口&#10;2.控制层分层，功能分明 职责单一">
+      <created>1581588824506</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581588824506</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+        <option value="2" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="多模块搭建" />
+    <MESSAGE value="1.登录系统的token生成与存放" />
+    <MESSAGE value="1.退出登录Token的销毁，以及Token的过期时间的更新&#10;2.做了验证短信的测试接口" />
+    <MESSAGE value="1.完善了短信验证接口&#10;2.控制层分层，功能分明 职责单一" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.完善了短信验证接口&#10;2.控制层分层，功能分明 职责单一" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="571" y="88" key="#HTTP_Proxy" timestamp="1581748980253">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="571" y="88" key="#HTTP_Proxy/0.0.1536.864@0.0.1536.864" timestamp="1581748980253" />
+    <state x="361" y="94" key="#Project_Structure" timestamp="1581314069159">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="94" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1581314069159" />
+    <state x="338" y="93" key="#Tomcat_Server" timestamp="1581658791461">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="338" y="93" key="#Tomcat_Server/0.0.1536.864@0.0.1536.864" timestamp="1581658791461" />
+    <state x="201" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581658797993">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="201" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1581658797993" />
+    <state x="282" y="182" key="#com.intellij.ide.util.MemberChooser" timestamp="1581740781151">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="282" y="182" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1581740781151" />
+    <state x="736" y="365" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581658393464">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="736" y="365" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.864@0.0.1536.864" timestamp="1581658393464" />
+    <state x="430" y="237" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1581390437704">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="430" y="237" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.864@0.0.1536.864" timestamp="1581390437704" />
+    <state x="230" y="387" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1581065620621">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="230" y="387" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1581065620621" />
+    <state x="499" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581664287363">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1581664287363" />
+    <state x="516" y="314" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1581751374293">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="516" y="314" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1581751374293" />
+    <state x="281" y="32" key="CommitChangelistDialog2" timestamp="1581588823300">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="281" y="32" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1581588823300" />
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1581661847743">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1581661847743" />
+    <state x="686" y="129" key="FileChooserDialogImpl" timestamp="1581658789701">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="686" y="129" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1581658789701" />
+    <state x="631" y="328" key="Github.ShareDialog" timestamp="1580984646888">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="631" y="328" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1580984646888" />
+    <state width="1297" height="287" key="GridCell.Tab.0.bottom" timestamp="1581759643003">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1297" height="287" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1581759643003" />
+    <state width="1297" height="287" key="GridCell.Tab.0.center" timestamp="1581759643003">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1297" height="287" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1581759643003" />
+    <state width="1297" height="287" key="GridCell.Tab.0.left" timestamp="1581759643003">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1297" height="287" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1581759643003" />
+    <state width="1297" height="287" key="GridCell.Tab.0.right" timestamp="1581759643003">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1297" height="287" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1581759643003" />
+    <state width="1297" height="287" key="GridCell.Tab.1.bottom" timestamp="1581759643004">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1297" height="287" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1581759643004" />
+    <state width="1297" height="287" key="GridCell.Tab.1.center" timestamp="1581759643003">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1297" height="287" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1581759643003" />
+    <state width="1297" height="287" key="GridCell.Tab.1.left" timestamp="1581759643003">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1297" height="287" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1581759643003" />
+    <state width="1297" height="287" key="GridCell.Tab.1.right" timestamp="1581759643004">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1297" height="287" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1581759643004" />
+    <state width="1297" height="287" key="GridCell.Tab.2.bottom" timestamp="1581759643004">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1297" height="287" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1581759643004" />
+    <state width="1297" height="287" key="GridCell.Tab.2.center" timestamp="1581759643004">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1297" height="287" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1581759643004" />
+    <state width="1297" height="287" key="GridCell.Tab.2.left" timestamp="1581759643004">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1297" height="287" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1581759643004" />
+    <state width="1297" height="287" key="GridCell.Tab.2.right" timestamp="1581759643004">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1297" height="287" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1581759643004" />
+    <state x="442" y="114" key="Maven.ArtifactSearchDialog" timestamp="1581067213702">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="442" y="114" key="Maven.ArtifactSearchDialog/0.0.1536.864@0.0.1536.864" timestamp="1581067213702" />
+    <state x="242" y="7" width="1187" height="709" key="SettingsEditor" timestamp="1581750437348">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="242" y="7" width="1187" height="709" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1581750437348" />
+    <state x="361" y="156" key="Vcs.Push.Dialog.v2" timestamp="1581588827033">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="156" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1581588827033" />
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1581748210404">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1581748210404" />
+    <state x="210" y="118" key="new project wizard" timestamp="1581300337936">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="210" y="118" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1581300337936" />
+    <state x="419" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1581740345279">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="419" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1581740345279" />
+  </component>
+</project>

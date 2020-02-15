@@ -188,7 +188,17 @@
             <artifactId>java-sms-sdk</artifactId>
             <version>1.0.1</version>
         </dependency>
-
+<!--        以下两个是发送邮件所属要的包-->
+        <dependency>
+            <groupId>activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.7</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-redis</artifactId>
