@@ -7,6 +7,7 @@ import cn.itrip.common.UserAgentUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.text.SimpleDateFormat;
@@ -17,6 +18,7 @@ import java.util.Date;
  * @author wangshijun
  */
 @Service
+@Transactional
 public class TokenServiceImpl implements TokenService {
     /**
      * "token"key的前缀（桌面端）

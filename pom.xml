@@ -188,16 +188,21 @@
             <artifactId>java-sms-sdk</artifactId>
             <version>1.0.1</version>
         </dependency>
-<!--        以下两个是发送邮件所属要的包-->
+        <!--        以下两个是发送邮件所要的包-->
         <dependency>
-            <groupId>activation</groupId>
+            <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
-            <version>1.0.2</version>
+            <version>1.1</version>
         </dependency>
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
             <version>1.4.7</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version> 2.9.2</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.data</groupId>
@@ -207,28 +212,7 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <version>2.4.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-aop</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.fasterxml</groupId>
-                    <artifactId>classmate</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.4.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-aop</artifactId>
-                </exclusion>
-            </exclusions>
+            <version>2.9.2</version>
         </dependency>
     </dependencies>
     <build>

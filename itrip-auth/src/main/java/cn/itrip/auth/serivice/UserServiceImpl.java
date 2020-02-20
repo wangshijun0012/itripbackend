@@ -5,6 +5,7 @@ import cn.itrip.common.MD5;
 import cn.itrip.common.RedisUtil;
 import cn.itrip.dao.user.ItripUserMapper;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -15,6 +16,7 @@ import java.util.List;
  * @author wangshijun
  */
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
     @Resource
     private ItripUserMapper itripUserMapper;

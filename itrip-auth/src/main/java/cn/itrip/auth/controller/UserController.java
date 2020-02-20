@@ -7,6 +7,8 @@ package cn.itrip.auth.controller;
         import cn.itrip.common.ErrorCode;
         import cn.itrip.common.MD5;
         import cn.itrip.common.SMSUtil;
+        import io.swagger.annotations.Api;
+        import io.swagger.annotations.ApiOperation;
         import org.springframework.stereotype.Controller;
         import org.springframework.web.bind.annotation.RequestBody;
         import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,11 +18,16 @@ package cn.itrip.auth.controller;
         import javax.annotation.Resource;
         import java.util.regex.Pattern;
 
+/**
+ * @author wangshijun
+ */
+@Api(value = "用户controller",tags = "用户操作接口")
 @Controller
 @RequestMapping("/api")
 public class UserController {
     @Resource
     private UserService userService;
+    @ApiOperation(value = "通过手机号注册",httpMethod = "POST",response = Dto.class,notes = "通过手机号进行注册")
     @RequestMapping(value = "/doLoginMessage",method = RequestMethod.POST)
     @ResponseBody
     //参数1：接受验证码的手机号，参数2：验证码内容，参数3：验证码有效时间（分钟）

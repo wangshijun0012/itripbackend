@@ -8,6 +8,8 @@ import cn.itrip.beans.vo.ItripTokenVO;
 import cn.itrip.common.DtoUtil;
 import cn.itrip.common.ErrorCode;
 import cn.itrip.common.MD5;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -17,6 +19,10 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Calendar;
 
+/**
+ * @author wangshijun
+ */
+@Api(value = "用户登录操作接口")
 @Controller
 @RequestMapping("/api")
 public class LoginController {
@@ -24,6 +30,7 @@ public class LoginController {
     private UserService userService;
     @Resource
     private TokenService tokenService;
+    @ApiOperation(value = "用户登录接口",response = DtoUtil.class,httpMethod = "POST")
     @RequestMapping(value = "/dologin",method = RequestMethod.POST)
     @ResponseBody
     public Dto dologin(String name , String password, HttpServletRequest request) {
@@ -47,6 +54,7 @@ public class LoginController {
             return DtoUtil.returnFail(e.getMessage(),ErrorCode.AUTH_UNKNOWN);
         }
     }
+    @ApiOperation(value = "用户退出登录接口",response = DtoUtil.class,httpMethod = "GET")
     @RequestMapping(value = "/logout",method = RequestMethod.GET,headers = "token")
     @ResponseBody
     public Dto logout(HttpServletRequest request){

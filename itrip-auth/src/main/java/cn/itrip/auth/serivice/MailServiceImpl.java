@@ -3,6 +3,7 @@ package cn.itrip.auth.serivice;
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
@@ -10,6 +11,7 @@ import javax.annotation.Resource;
  * @author wangshijun
  */
 @Service
+@Transactional
 public class MailServiceImpl implements MailService {
     @Resource
     private SimpleMailMessage message;

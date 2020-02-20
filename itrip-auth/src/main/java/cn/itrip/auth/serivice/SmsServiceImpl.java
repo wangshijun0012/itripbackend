@@ -3,6 +3,7 @@ package cn.itrip.auth.serivice;
 import com.cloopen.rest.sdk.BodyType;
 import com.cloopen.rest.sdk.CCPRestSmsSDK;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
 import java.util.Set;
@@ -11,6 +12,7 @@ import java.util.Set;
  * @author wangshijun
  */
 @Service
+@Transactional
 public class SmsServiceImpl implements SmsService {
     @Override
     public void sendSms(String mobilPhoneNum, String templateId, String[] datas) {

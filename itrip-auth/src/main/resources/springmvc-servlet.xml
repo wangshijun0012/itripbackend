@@ -35,4 +35,8 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
+    <mvc:resources location="classpath:/META-INF/resources/" mapping="swagger-ui.html"/>
+    <mvc:resources location="classpath:/META-INF/resources/webjars/" mapping="/webjars/**"/>
+    <bean class="cn.itrip.auth.controller.SwaggerConfig"/>
+
 </beans>
