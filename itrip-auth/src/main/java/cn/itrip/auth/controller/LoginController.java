@@ -22,7 +22,7 @@ import java.util.Calendar;
 /**
  * @author wangshijun
  */
-@Api(value = "用户登录操作接口")
+@Api(value = "用户登录操作接口",tags = "用户登录操作接口")
 @Controller
 @RequestMapping("/api")
 public class LoginController {

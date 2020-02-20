@@ -6,7 +6,6 @@ package cn.itrip.auth.controller;
         import cn.itrip.common.DtoUtil;
         import cn.itrip.common.ErrorCode;
         import cn.itrip.common.MD5;
-        import cn.itrip.common.SMSUtil;
         import io.swagger.annotations.Api;
         import io.swagger.annotations.ApiOperation;
         import org.springframework.stereotype.Controller;
@@ -21,24 +20,13 @@ package cn.itrip.auth.controller;
 /**
  * @author wangshijun
  */
-@Api(value = "用户controller",tags = "用户操作接口")
+@Api(value = "用户controller",tags = "用户信息操作接口")
 @Controller
 @RequestMapping("/api")
 public class UserController {
     @Resource
     private UserService userService;
-    @ApiOperation(value = "通过手机号注册",httpMethod = "POST",response = Dto.class,notes = "通过手机号进行注册")
-    @RequestMapping(value = "/doLoginMessage",method = RequestMethod.POST)
-    @ResponseBody
-    //参数1：接受验证码的手机号，参数2：验证码内容，参数3：验证码有效时间（分钟）
-    public Dto sendLoginMessage(String mobilPhoneNum,String data1,String data2){
-        boolean isSended = SMSUtil.sendSMS(mobilPhoneNum,"1", new String[]{data1,data2});
-        if(isSended){
-            return DtoUtil.returnSuccess("发送成功");
-        }else{
-            return DtoUtil.returnFail("发送失败",ErrorCode.AUTH_UNKNOWN);
-        }
-    }
+    @ApiOperation(value = "手机号注册",response = DtoUtil.class,httpMethod = "POST")
     @RequestMapping(value = "/registerbyphone" ,method = RequestMethod.POST)
     @ResponseBody
     public Dto registerByPhone(@RequestBody ItripUserVO userVO){
@@ -60,14 +48,17 @@ public class UserController {
         }
         return DtoUtil.returnSuccess("发送验证码成功",user);
     }
+    @ApiOperation(value = "手机号格式判断",notes = "返回boolean类型")
     private Boolean validatePhone(String phoneNum){
         String reg = "^1[356789]\\d{9}$";
         return Pattern.compile(reg).matcher(phoneNum).find();
     }
+    @ApiOperation(value = "邮箱地址格式判断",notes = "返回boolean类型")
     private boolean validateMail(String email){
         String regex="^\\s*\\w+(?:\\.{0,1}[\\w-]+)*@[a-zA-Z0-9]+(?:[-.][a-zA-Z0-9]+)*\\.[a-zA-Z]+\\s*$"  ;
         return Pattern.compile(regex).matcher(email).find();
     }
+    @ApiOperation(value = "手机验证码验证",response = DtoUtil.class,httpMethod = "PUT",notes = "验证成功则激活账户")
     @RequestMapping(value = "/validatephone",method = RequestMethod.PUT)
     @ResponseBody
     public Dto validatePhone(String user,String code){
@@ -80,6 +71,7 @@ public class UserController {
         }
         return DtoUtil.returnFail("验证失败",ErrorCode.AUTH_ACTIVATE_FAILED);
     }
+    @ApiOperation(value = "用户名验证",response = DtoUtil.class,httpMethod = "GET")
     @RequestMapping(value = "/ckusr",method=RequestMethod.GET)
     @ResponseBody
     public Dto checkUser(String name){
@@ -94,6 +86,7 @@ public class UserController {
             return DtoUtil.returnFail(e.getMessage(),ErrorCode.AUTH_UNKNOWN);
         }
     }
+    @ApiOperation(value = "进行邮箱验证码验证",response = DtoUtil.class,httpMethod = "PUT",notes = "验证成功则激活账户")
     @RequestMapping(value ="/activate" ,method = RequestMethod.PUT)
     @ResponseBody
     public Dto activateMail(String user,String code){
@@ -108,6 +101,7 @@ public class UserController {
         }
         return null;
     }
+    @ApiOperation(value = "邮箱地址注册",response = DtoUtil.class,httpMethod = "POST")
     @RequestMapping(value = "/doregister",method = RequestMethod.POST)
     @ResponseBody
     public Dto registerByMail(@RequestBody ItripUserVO userVO){
