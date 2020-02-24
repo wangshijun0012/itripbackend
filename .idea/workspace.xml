@@ -13,10 +13,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce51f438-54fb-4b4d-a8b2-9afd93b720ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/itrip-auth/src/main/resources/spring-mail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/log.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/src/main/java/cn/itrip/search/bean/ItripHotelVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/src/main/java/cn/itrip/search/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/src/main/java/cn/itrip/search/controller/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/src/main/java/cn/itrip/search/dao/BaseQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/src/main/java/cn/itrip/search/pojo/Hotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/src/main/java/cn/itrip/search/service/SearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/src/main/java/cn/itrip/search/service/SearchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/src/main/resources/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/src/main/resources/springmvc-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itrip-search/src/test/java/TestSolr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/TokenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/TokenController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/service/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/MailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/service/MailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/SmsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/service/SmsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/SmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/service/SmsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/service/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/TokenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/service/TokenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/serivice/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/resources/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/resources/springmvc-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-search/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-search/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-util/src/main/java/cn/itrip/common/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-util/src/main/java/cn/itrip/common/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +60,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="ApplicationContext.xml" />
+        <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -71,24 +99,18 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/itrip-search/src/main/webapp/WEB-INF" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-auth\src\main\java\cn\itrip\auth\controller" />
-      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-auth\src\main\webapp" />
-      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-auth\src\main\resources" />
-      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend" />
-      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-dao\src\main\java\cn\itrip\dao" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-dao\src\main\java\cn\itrip" />
       <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-beans\src\main\java\cn\itrip\beans" />
@@ -96,14 +118,27 @@
       <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-util\src\main\resources" />
       <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-util\src" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.itrip.search.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-search\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-search\src\main\java\cn\itrip" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-search\src\main\java\cn\itrip\search" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-search\src\main\resources" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-auth\src\main\java\cn\itrip\auth\controller" />
+    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.29">
-    <configuration name="MD5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.itrip.common.MD5" />
-      <module name="itrip-util" />
+    <configuration name="TestSolr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestSolr" />
+      <module name="itrip-search" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.itrip.common.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,6 +155,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSolr.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itrip-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSolr" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,16 +195,6 @@
       <option name="PACKAGE_NAME" value="cn.itrip.auth.serivice" />
       <option name="MAIN_CLASS_NAME" value="cn.itrip.auth.serivice.testService" />
       <option name="METHOD_NAME" value="testIt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="itrip-auth" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -253,20 +294,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MD5" />
       <item itemvalue="Application.UserAgentUtil" />
+      <item itemvalue="Application.TestSolr" />
       <item itemvalue="JUnit.test" />
-      <item itemvalue="JUnit.test.test01" />
       <item itemvalue="JUnit.testService.testIt" />
+      <item itemvalue="JUnit.TestSolr.test01" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.29" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSolr.test01" />
+        <item itemvalue="Application.TestSolr" />
         <item itemvalue="JUnit.test" />
         <item itemvalue="JUnit.testService.testIt" />
         <item itemvalue="Application.UserAgentUtil" />
-        <item itemvalue="Application.MD5" />
-        <item itemvalue="JUnit.test.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -326,7 +367,10 @@
       <workItem from="1581985875608" duration="8333000" />
       <workItem from="1582006586188" duration="53000" />
       <workItem from="1582006656709" duration="6323000" />
-      <workItem from="1582158577445" duration="5957000" />
+      <workItem from="1582158577445" duration="17703000" />
+      <workItem from="1582263879310" duration="9521000" />
+      <workItem from="1582283528718" duration="736000" />
+      <workItem from="1582503981818" duration="11524000" />
     </task>
     <task id="LOCAL-00001" summary="多模块搭建">
       <created>1580984351322</created>
@@ -370,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582165419213</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1、重新上传beans">
+      <created>1582169395455</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582169395455</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,6 +473,13 @@
             </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="OPEN_TABS">
@@ -432,35 +490,38 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="多模块搭建" />
     <MESSAGE value="1.登录系统的token生成与存放" />
     <MESSAGE value="1.退出登录Token的销毁，以及Token的过期时间的更新&#10;2.做了验证短信的测试接口" />
     <MESSAGE value="1.完善了短信验证接口&#10;2.控制层分层，功能分明 职责单一" />
     <MESSAGE value="1.修改了最外层pom.xml文件，添加了两个与发送邮件相关的依赖&#10;2.完善了邮箱验证接口和注册功能&#10;3.遵循阿里云规范，增加了大量注释，调整代码结构" />
     <MESSAGE value="1、添加了swagger功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、添加了swagger功能" />
+    <MESSAGE value="1、重新上传beans" />
+    <MESSAGE value="1、完善了swagger的注释及测试功能，使用swagger可以代替postman对接口进行测试。&#10;2、修复了auth模块的一个低级错误，将业务层名字serivice改回service。&#10;3、将mail功能的配置从applicationContext.xml中分离出来，独立成sping-mail.xml配置文件。&#10;4、添加了search模块的代码。" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、完善了swagger的注释及测试功能，使用swagger可以代替postman对接口进行测试。&#10;2、修复了auth模块的一个低级错误，将业务层名字serivice改回service。&#10;3、将mail功能的配置从applicationContext.xml中分离出来，独立成sping-mail.xml配置文件。&#10;4、添加了search模块的代码。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="571" y="88" key="#HTTP_Proxy" timestamp="1581748980253">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="571" y="88" key="#HTTP_Proxy/0.0.1536.864@0.0.1536.864" timestamp="1581748980253" />
-    <state x="361" y="94" key="#Project_Structure" timestamp="1581922102734">
+    <state x="361" y="94" key="#Project_Structure" timestamp="1582189437598">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="94" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1581922102734" />
+    <state x="361" y="94" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1582189437598" />
     <state x="338" y="93" key="#Tomcat_Server" timestamp="1581658791461">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="338" y="93" key="#Tomcat_Server/0.0.1536.864@0.0.1536.864" timestamp="1581658791461" />
-    <state x="201" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582014308672">
+    <state x="201" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582522119163">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="201" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1582014308672" />
-    <state x="282" y="182" key="#com.intellij.ide.util.MemberChooser" timestamp="1581740781151">
+    <state x="201" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1582522119163" />
+    <state x="282" y="182" key="#com.intellij.ide.util.MemberChooser" timestamp="1582190644693">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="282" y="182" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1581740781151" />
+    <state x="282" y="182" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1582190644693" />
     <state x="736" y="365" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581658393464">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -473,6 +534,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="230" y="387" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1581065620621" />
+    <state x="677" y="312" width="429" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582190827510">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="677" y="312" width="429" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1582190827510" />
+    <state x="967" y="145" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1582189165482">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="967" y="145" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1536.864@0.0.1536.864" timestamp="1582189165482" />
     <state x="499" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581664287363">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -481,82 +550,94 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="516" y="314" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1581751374293" />
-    <state x="281" y="20" key="CommitChangelistDialog2" timestamp="1582169350601">
+    <state x="281" y="20" key="CommitChangelistDialog2" timestamp="1582536300639">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="281" y="20" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1582169350601" />
+    <state x="281" y="20" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1582536300639" />
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1581661847743">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1581661847743" />
-    <state x="686" y="129" key="FileChooserDialogImpl" timestamp="1581658789701">
+    <state x="686" y="129" key="FileChooserDialogImpl" timestamp="1582264302956">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="686" y="129" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1581658789701" />
+    <state x="686" y="129" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1582264302956" />
     <state x="631" y="328" key="Github.ShareDialog" timestamp="1580984646888">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="631" y="328" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1580984646888" />
-    <state width="1163" height="248" key="GridCell.Tab.0.bottom" timestamp="1582168243762">
+    <state width="1297" height="244" key="GridCell.Tab.0.bottom" timestamp="1582535908757">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1163" height="248" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1582168243762" />
-    <state width="1163" height="248" key="GridCell.Tab.0.center" timestamp="1582168243762">
+    <state width="1342" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287683" />
+    <state width="1297" height="244" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1582535908757" />
+    <state width="1297" height="244" key="GridCell.Tab.0.center" timestamp="1582535908757">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1163" height="248" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1582168243762" />
-    <state width="1163" height="248" key="GridCell.Tab.0.left" timestamp="1582168243762">
+    <state width="1342" height="203" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287683" />
+    <state width="1297" height="244" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1582535908757" />
+    <state width="1297" height="244" key="GridCell.Tab.0.left" timestamp="1582535908756">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1163" height="248" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1582168243762" />
-    <state width="1163" height="248" key="GridCell.Tab.0.right" timestamp="1582168243762">
+    <state width="1342" height="203" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287683" />
+    <state width="1297" height="244" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1582535908756" />
+    <state width="1297" height="244" key="GridCell.Tab.0.right" timestamp="1582535908757">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1163" height="248" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1582168243762" />
-    <state width="1163" height="248" key="GridCell.Tab.1.bottom" timestamp="1582168243688">
+    <state width="1342" height="203" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287683" />
+    <state width="1297" height="244" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1582535908757" />
+    <state width="1297" height="244" key="GridCell.Tab.1.bottom" timestamp="1582535908638">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1163" height="248" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1582168243688" />
-    <state width="1163" height="248" key="GridCell.Tab.1.center" timestamp="1582168243688">
+    <state width="1297" height="244" key="GridCell.Tab.1.bottom/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
+    <state width="1297" height="244" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1582535908638" />
+    <state width="1297" height="244" key="GridCell.Tab.1.center" timestamp="1582535908638">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1163" height="248" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1582168243688" />
-    <state width="1163" height="248" key="GridCell.Tab.1.left" timestamp="1582168243688">
+    <state width="1297" height="244" key="GridCell.Tab.1.center/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
+    <state width="1297" height="244" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1582535908638" />
+    <state width="1297" height="244" key="GridCell.Tab.1.left" timestamp="1582535908638">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1163" height="248" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1582168243688" />
-    <state width="1163" height="248" key="GridCell.Tab.1.right" timestamp="1582168243688">
+    <state width="1297" height="244" key="GridCell.Tab.1.left/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
+    <state width="1297" height="244" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1582535908638" />
+    <state width="1297" height="244" key="GridCell.Tab.1.right" timestamp="1582535908638">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1163" height="248" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1582168243688" />
-    <state width="1163" height="248" key="GridCell.Tab.2.bottom" timestamp="1582168243689">
+    <state width="1297" height="244" key="GridCell.Tab.1.right/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
+    <state width="1297" height="244" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1582535908638" />
+    <state width="1297" height="244" key="GridCell.Tab.2.bottom" timestamp="1582535908639">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1163" height="248" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1582168243689" />
-    <state width="1163" height="248" key="GridCell.Tab.2.center" timestamp="1582168243688">
+    <state width="1297" height="244" key="GridCell.Tab.2.bottom/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287677" />
+    <state width="1297" height="244" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1582535908639" />
+    <state width="1297" height="244" key="GridCell.Tab.2.center" timestamp="1582535908639">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1163" height="248" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1582168243688" />
-    <state width="1163" height="248" key="GridCell.Tab.2.left" timestamp="1582168243688">
+    <state width="1297" height="244" key="GridCell.Tab.2.center/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287677" />
+    <state width="1297" height="244" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1582535908639" />
+    <state width="1297" height="244" key="GridCell.Tab.2.left" timestamp="1582535908639">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1163" height="248" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1582168243688" />
-    <state width="1163" height="248" key="GridCell.Tab.2.right" timestamp="1582168243689">
+    <state width="1297" height="244" key="GridCell.Tab.2.left/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
+    <state width="1297" height="244" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1582535908639" />
+    <state width="1297" height="244" key="GridCell.Tab.2.right" timestamp="1582535908639">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1163" height="248" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1582168243689" />
+    <state width="1297" height="244" key="GridCell.Tab.2.right/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287677" />
+    <state width="1297" height="244" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1582535908639" />
     <state x="442" y="114" key="Maven.ArtifactSearchDialog" timestamp="1581067213702">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="442" y="114" key="Maven.ArtifactSearchDialog/0.0.1536.864@0.0.1536.864" timestamp="1581067213702" />
-    <state x="242" y="7" width="1187" height="709" key="SettingsEditor" timestamp="1582168039712">
+    <state x="69" y="65" width="1187" height="709" key="SettingsEditor" timestamp="1582274808514">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="242" y="7" width="1187" height="709" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1582168039712" />
-    <state x="361" y="156" key="Vcs.Push.Dialog.v2" timestamp="1582165421365">
+    <state x="69" y="65" width="1187" height="709" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1582274808514" />
+    <state x="361" y="156" key="Vcs.Push.Dialog.v2" timestamp="1582169397949">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="156" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1582165421365" />
+    <state x="361" y="156" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1582169397949" />
     <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1581748210404">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

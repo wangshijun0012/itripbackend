@@ -25,6 +25,8 @@ public class ErrorCode {
 	public final static String AUTH_TOKEN_INVALID="30006";//token无效
 	public static final String AUTH_ILLEGAL_USERCODE = "30007";//非法的用户名
 	
-	
+	public static final String SEARCH_UNKNOWN = "20001"; //系统异常，获取失败
+	public static final String SEARCH_DESTINATION_NOTNULL = "20004" ;//城市id不能为空
+	public static final String SEARCH_CITYID_NOTFOUND ="20002";//目的地不能为空
 	/*认证模块错误码-end*/
 }

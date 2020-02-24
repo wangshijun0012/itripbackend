@@ -1,4 +1,4 @@
-package cn.itrip.auth.serivice;
+package cn.itrip.auth.service;
 
 import com.cloopen.rest.sdk.BodyType;
 import com.cloopen.rest.sdk.CCPRestSmsSDK;

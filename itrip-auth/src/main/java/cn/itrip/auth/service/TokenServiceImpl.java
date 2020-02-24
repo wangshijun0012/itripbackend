@@ -1,4 +1,4 @@
-package cn.itrip.auth.serivice;
+package cn.itrip.auth.service;
 
 import cn.itrip.beans.pojo.ItripUser;
 import cn.itrip.common.MD5;

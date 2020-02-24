@@ -1,5 +1,5 @@
 package cn.itrip.auth.controller;
-        import cn.itrip.auth.serivice.UserService;
+        import cn.itrip.auth.service.UserService;
         import cn.itrip.beans.dto.Dto;
         import cn.itrip.beans.pojo.ItripUser;
         import cn.itrip.beans.vo.userinfo.ItripUserVO;

@@ -1,4 +1,4 @@
-package cn.itrip.auth.serivice;
+package cn.itrip.auth.service;
 
 /**
  * @author wangshijun

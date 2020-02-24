@@ -1,4 +1,4 @@
-package cn.itrip.auth.serivice;
+package cn.itrip.auth.service;
 
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
