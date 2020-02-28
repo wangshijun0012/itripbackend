@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 public class TokenController {
     @Resource
     private TokenService tokenService;
-    @ApiOperation(value = "token置换接口",response = DtoUtil.class,httpMethod = "POST")
+    @ApiOperation(value = "token置换接口",response = Dto.class,httpMethod = "POST")
     @RequestMapping(value = "/retoken",method = RequestMethod.POST,headers = "token")
     @ResponseBody
     public Dto reloadToken(HttpServletRequest request){
@@ -32,12 +32,12 @@ public class TokenController {
         try {
             Boolean isReloadToken = tokenService.reloadToken(userAgent, token);
             if(!isReloadToken){
-                return DtoUtil.returnFail("置换失败", ErrorCode.AUTH_TOKEN_INVALID);
+                return DtoUtil.returnFail("置换失败,token无效", ErrorCode.AUTH_TOKEN_INVALID);
             }
-            return DtoUtil.returnSuccess("置换成功",token);
         } catch (Exception e) {
             e.printStackTrace();
+            return DtoUtil.returnFail("系统故障，置换错误",ErrorCode.AUTH_REPLACEMENT_FAILED);
         }
-        return DtoUtil.returnFail("置换错误",ErrorCode.AUTH_UNKNOWN);
+        return DtoUtil.returnSuccess("置换成功",token);
     }
 }

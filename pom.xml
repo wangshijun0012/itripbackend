@@ -18,7 +18,7 @@
         <module>itrip-trade</module>
     </modules>
     <properties>
-        <spring-version>4.2.4.RELEASE</spring-version>
+        <spring-version>4.3.26.RELEASE</spring-version>
     </properties>
     <dependencies>
         <dependency>
@@ -218,6 +218,17 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>2.9.2</version>
+        </dependency>
+<!--        以下两个是swagger相关的依赖，并不是swagger的必须依赖-->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>26.0-jre</version>
         </dependency>
     </dependencies>
     <build>

@@ -26,7 +26,7 @@ package cn.itrip.auth.controller;
 public class UserController {
     @Resource
     private UserService userService;
-    @ApiOperation(value = "手机号注册",response = DtoUtil.class,httpMethod = "POST")
+    @ApiOperation(value = "手机号注册",response = Dto.class,httpMethod = "POST")
     @RequestMapping(value = "/registerbyphone" ,method = RequestMethod.POST)
     @ResponseBody
     public Dto registerByPhone(@RequestBody ItripUserVO userVO){
@@ -58,7 +58,7 @@ public class UserController {
         String regex="^\\s*\\w+(?:\\.{0,1}[\\w-]+)*@[a-zA-Z0-9]+(?:[-.][a-zA-Z0-9]+)*\\.[a-zA-Z]+\\s*$"  ;
         return Pattern.compile(regex).matcher(email).find();
     }
-    @ApiOperation(value = "手机验证码验证",response = DtoUtil.class,httpMethod = "PUT",notes = "验证成功则激活账户")
+    @ApiOperation(value = "手机验证码验证",response = Dto.class,httpMethod = "PUT",notes = "验证成功则激活账户")
     @RequestMapping(value = "/validatephone",method = RequestMethod.PUT)
     @ResponseBody
     public Dto validatePhone(String user,String code){
@@ -71,7 +71,7 @@ public class UserController {
         }
         return DtoUtil.returnFail("验证失败",ErrorCode.AUTH_ACTIVATE_FAILED);
     }
-    @ApiOperation(value = "用户名验证",response = DtoUtil.class,httpMethod = "GET")
+    @ApiOperation(value = "用户名验证",response = Dto.class,httpMethod = "GET")
     @RequestMapping(value = "/ckusr",method=RequestMethod.GET)
     @ResponseBody
     public Dto checkUser(String name){
@@ -86,7 +86,7 @@ public class UserController {
             return DtoUtil.returnFail(e.getMessage(),ErrorCode.AUTH_UNKNOWN);
         }
     }
-    @ApiOperation(value = "进行邮箱验证码验证",response = DtoUtil.class,httpMethod = "PUT",notes = "验证成功则激活账户")
+    @ApiOperation(value = "进行邮箱验证码验证",response = Dto.class,httpMethod = "PUT",notes = "验证成功则激活账户")
     @RequestMapping(value ="/activate" ,method = RequestMethod.PUT)
     @ResponseBody
     public Dto activateMail(String user,String code){
@@ -101,7 +101,7 @@ public class UserController {
         }
         return null;
     }
-    @ApiOperation(value = "邮箱地址注册",response = DtoUtil.class,httpMethod = "POST")
+    @ApiOperation(value = "邮箱地址注册",response = Dto.class,httpMethod = "POST")
     @RequestMapping(value = "/doregister",method = RequestMethod.POST)
     @ResponseBody
     public Dto registerByMail(@RequestBody ItripUserVO userVO){
