@@ -24,9 +24,31 @@ public class ErrorCode {
 	public final static String AUTH_REPLACEMENT_FAILED="30005";//置换token失败
 	public final static String AUTH_TOKEN_INVALID="30006";//token无效
 	public static final String AUTH_ILLEGAL_USERCODE = "30007";//非法的用户名
-	
+	/*认证模块错误码-end*/
 	public static final String SEARCH_UNKNOWN = "20001"; //系统异常，获取失败
 	public static final String SEARCH_DESTINATION_NOTNULL = "20004" ;//城市id不能为空
 	public static final String SEARCH_CITYID_NOTFOUND ="20002";//目的地不能为空
-	/*认证模块错误码-end*/
+
+	public static final String AREA_CITYID_NOTNULL = "10203";
+	public static final String AEEA_SYSTEM_ERROR = "10204";
+
+	public static final String IMG_SYSTEM_ERROR = "100212";
+	public static final String IMG_HOTELID_NOTNULL = "100213";
+
+	public static final String VIDEO_HOTELID_NOTNULL = "100215";
+	public static final String VIDEO_SYSTEM_ERROR = "100214";
+
+	public static final String FACILITY_CITYID_NOTNULL = "10206";
+	public static final String FACILITY_SYSTEM_ERROR = "10207";
+
+	public static final String FEATURE_SYSTEM_ERROR ="10205";
+
+	public static final String HOTCITY_TYPE_NOTNULL = "10201";
+	public static final String HOTCITY_SYSTEM_ERROR = "10202";
+
+	public static final String DETAILS_HOTELID_NOTNULL = "10210";
+	public static final String DETAILS_SYSTEM_ERROR = "10211";
+
+	public static final String POLICY_HOTELID_NOTNULL = "10208";
+	public static final String POLICY_SYSTEM_ERROR = "10209";
 }

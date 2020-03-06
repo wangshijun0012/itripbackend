@@ -25,7 +25,7 @@ import java.util.List;
 public class SearchController {
     @Resource
     private SearchService searchService;
-    @ApiOperation(value = "查询热门酒店接口",response = DtoUtil.class,httpMethod = "POST")
+    @ApiOperation(value = "查询热门酒店接口",response = Dto.class,httpMethod = "POST")
     @RequestMapping(value="/searchItripHotelListByHotCity",method = RequestMethod.POST)
     @ResponseBody
     public Dto<ItripHotelVO> queryHotCity(@RequestBody SearchHotCityVO vo){
@@ -42,7 +42,7 @@ public class SearchController {
             return DtoUtil.returnDataSuccess(list);
         }
     }
-    @ApiOperation(value = "查询热门酒店分页接口",response = DtoUtil.class,httpMethod = "POST")
+    @ApiOperation(value = "查询热门酒店分页接口",response = Dto.class,httpMethod = "POST")
     @RequestMapping(value="/searchItripHotelPage",method = RequestMethod.POST)
     @ResponseBody
     public Dto<ItripHotelVO> queryHotel(@RequestBody SearchHotelVO vo){
