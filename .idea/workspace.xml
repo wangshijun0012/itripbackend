@@ -10,27 +10,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce51f438-54fb-4b4d-a8b2-9afd93b720ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/itrip-biz/log.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itrip-biz/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itrip-biz/src/main/resources/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itrip-biz/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itrip-biz/src/main/resources/redis.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itrip-biz/src/main/resources/spring-redis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itrip-biz/src/main/resources/springmvc-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itrip-biz/src/main/resources/systemConfig.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itrip-biz/src/test/java/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/TokenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/TokenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-util/src/main/java/cn/itrip/common/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-util/src/main/java/cn/itrip/common/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-util/src/main/java/cn/itrip/common/SystemConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-util/src/main/java/cn/itrip/common/SystemConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="ce51f438-54fb-4b4d-a8b2-9afd93b720ed" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -342,7 +323,7 @@
       <workItem from="1582263879310" duration="9521000" />
       <workItem from="1582283528718" duration="736000" />
       <workItem from="1582503981818" duration="11524000" />
-      <workItem from="1583457169151" duration="8266000" />
+      <workItem from="1583457169151" duration="8529000" />
     </task>
     <task id="LOCAL-00001" summary="多模块搭建">
       <created>1580984351322</created>
@@ -393,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582169395455</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1、修复了token生效时间过短的问题&#10;2、biz模块进行了整改，目前正在进行重写订单，其他很多是网上的源代码，目前没有发现错误">
+      <created>1583465649173</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583465649174</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +485,8 @@
     <MESSAGE value="1、添加了swagger功能" />
     <MESSAGE value="1、重新上传beans" />
     <MESSAGE value="1、完善了swagger的注释及测试功能，使用swagger可以代替postman对接口进行测试。&#10;2、修复了auth模块的一个低级错误，将业务层名字serivice改回service。&#10;3、将mail功能的配置从applicationContext.xml中分离出来，独立成sping-mail.xml配置文件。&#10;4、添加了search模块的代码。" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、完善了swagger的注释及测试功能，使用swagger可以代替postman对接口进行测试。&#10;2、修复了auth模块的一个低级错误，将业务层名字serivice改回service。&#10;3、将mail功能的配置从applicationContext.xml中分离出来，独立成sping-mail.xml配置文件。&#10;4、添加了search模块的代码。" />
+    <MESSAGE value="1、修复了token生效时间过短的问题&#10;2、biz模块进行了整改，目前正在进行重写订单，其他很多是网上的源代码，目前没有发现错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、修复了token生效时间过短的问题&#10;2、biz模块进行了整改，目前正在进行重写订单，其他很多是网上的源代码，目前没有发现错误" />
   </component>
   <component name="WindowStateProjectService">
     <state x="571" y="88" key="#HTTP_Proxy" timestamp="1581748980253">
@@ -548,10 +537,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="516" y="314" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1581751374293" />
-    <state x="281" y="20" key="CommitChangelistDialog2" timestamp="1582536300639">
+    <state x="270" y="33" width="923" height="690" key="CommitChangelistDialog2" timestamp="1583465647424">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="281" y="20" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1582536300639" />
+    <state x="270" y="33" width="923" height="690" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583465647424" />
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1581661847743">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -632,10 +621,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="69" y="65" width="1187" height="709" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1582274808514" />
-    <state x="361" y="156" key="Vcs.Push.Dialog.v2" timestamp="1582169397949">
+    <state x="354" y="139" key="Vcs.Push.Dialog.v2" timestamp="1583465701647">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="156" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1582169397949" />
+    <state x="354" y="139" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583465701647" />
     <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1583394649633">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
