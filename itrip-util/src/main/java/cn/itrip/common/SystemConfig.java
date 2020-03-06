@@ -1,9 +1,13 @@
 package cn.itrip.common;
+
+import org.springframework.stereotype.Component;
+
 /**
  * SystemConfig
  * @author hanlu
  *
  */
+@Component
 public class SystemConfig {
 
 	/**

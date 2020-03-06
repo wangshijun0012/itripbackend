@@ -30,7 +30,7 @@ public class LoginController {
     private UserService userService;
     @Resource
     private TokenService tokenService;
-    @ApiOperation(value = "用户登录接口",response = DtoUtil.class,httpMethod = "POST")
+    @ApiOperation(value = "用户登录接口",response = Dto.class,httpMethod = "POST")
     @RequestMapping(value = "/dologin",method = RequestMethod.POST)
     @ResponseBody
     public Dto dologin(String name , String password, HttpServletRequest request) {
@@ -47,14 +47,14 @@ public class LoginController {
             //保存token到redis
             tokenService.savaToken(token,user);
             //返回一个vo对象
-            ItripTokenVO vo = new ItripTokenVO(token, Calendar.getInstance().getTimeInMillis() + 2*60*60 ,Calendar.getInstance().getTimeInMillis());
+            ItripTokenVO vo = new ItripTokenVO(token, Calendar.getInstance().getTimeInMillis() + 2*60*60*1000 ,Calendar.getInstance().getTimeInMillis());
             return DtoUtil.returnSuccess("登陆成功",vo);
         } catch (Exception e) {
             e.printStackTrace();
             return DtoUtil.returnFail(e.getMessage(),ErrorCode.AUTH_UNKNOWN);
         }
     }
-    @ApiOperation(value = "用户退出登录接口",response = DtoUtil.class,httpMethod = "GET")
+    @ApiOperation(value = "用户退出登录接口",response = Dto.class,httpMethod = "GET")
     @RequestMapping(value = "/logout",method = RequestMethod.GET,headers = "token")
     @ResponseBody
     public Dto logout(HttpServletRequest request){

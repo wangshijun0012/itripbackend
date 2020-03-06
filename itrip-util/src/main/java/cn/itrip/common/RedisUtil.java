@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.stereotype.Component;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -338,6 +337,7 @@ public class RedisUtil {
                 return null;
             }
             key = buildKey(key);
+            System.out.println(stringRedisTemplate.opsForValue().get(key));
             return stringRedisTemplate.opsForValue().get(key);
         } catch (Exception e) {
             LOG.error(e.getMessage(), e);
