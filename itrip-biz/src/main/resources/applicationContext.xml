@@ -17,7 +17,7 @@ http://www.springframework.org/schema/aop
 http://www.springframework.org/schema/aop/spring-aop.xsd
 http://www.springframework.org/schema/mvc
 http://www.springframework.org/schema/mvc/spring-mvc.xsd">
-    <context:property-placeholder location="classpath*:database.properties"/>
+    <context:property-placeholder location="classpath*:database.properties,classpath*:systemConfig.properties"/>
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
         <property name="driverClassName" value="${mysql.driver}"/>
         <property name="url" value="${mysql.url}"/>
@@ -49,13 +49,12 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
         <property name="maxInMemorySize" value="40960"></property>
         <property name="resolveLazily" value="true"></property>
     </bean>
-    <context:property-placeholder location="classpath:systemConfig.properties"/>
     <bean name="systemConfig" class="cn.itrip.common.SystemConfig">
-        <property value="${sysConfig.fileUploadPath}" name="fileUploadPathString"/>
-        <property value="${sysConfig.visitImgUrl}" name="visitImgUrlString"/>
-        <property value="${sysConfig.machineCode}" name="machineCode"/>
-        <property value="${sysConfig.orderProcessOK}" name="orderProcessOK"/>
-        <property value="${sysConfig.orderProcessCancel}" name="orderProcessCancel"/>
+        <property name="fileUploadPathString" value="${sysConfig.fileUploadPath}"/>
+        <property name="visitImgUrlString" value="${sysConfig.visitImgUrl}"/>
+        <property name="machineCode" value="${sysConfig.machineCode}"/>
+        <property name="orderProcessOK" value="${sysConfig.orderProcessOK}"/>
+        <property name="orderProcessCancel" value="${sysConfig.orderProcessCancel}"/>
     </bean>
     <bean id="validationToken" class="cn.itrip.common.ValidationToken">
         <property name="redisAPI" ref="redisAPI"/>

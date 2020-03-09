@@ -190,8 +190,6 @@
                     GROUP BY  store.roomId,store.recordDate) AS A
                     WHERE  A.recordDate BETWEEN DATE_FORMAT(#{startTime}, '%Y-%m-%d') AND DATE_FORMAT(#{endTime}, '%Y-%m-%d') ORDER by A.store ASC
     </select>
-
-
     <update id="updateRoomStore" parameterType="java.util.Map">
         update itrip_hotel_temp_store set  store=store-#{count}
         WHERE

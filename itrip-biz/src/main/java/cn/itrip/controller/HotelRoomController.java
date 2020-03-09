@@ -21,22 +21,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.util.*;
 
-/**
- * 酒店房间Controller
- * <p/>
- * 包括API接口：
- * 1、根据入住时间，退房时间 等条件查询酒店房间列表
- * 2、根据type 和target id 查询酒店房间图片
- * 3、查询床型的接口
- * <p/>
- * <p/>
- * 注：错误码（100301 ——100400）
- * <p/>
- * Created by hanlu on 2017/5/9.
- */
-
 @Controller
-@Api(value = "API", basePath = "/http://api.itrap.com/api")
+@Api(value = "API")
 @RequestMapping(value = "/api/hotelroom")
 public class HotelRoomController {
     private Logger logger = Logger.getLogger(HotelRoomController.class);
@@ -92,7 +78,7 @@ public class HotelRoomController {
     public Dto<List<ItripHotelRoomVO>> queryHotelRoomByHotel(@RequestBody SearchHotelRoomVO vo) {
         List<List<ItripHotelRoomVO>> hotelRoomVOList = null;
         try {
-            Map<String, Object> param = new HashMap();
+            Map<String, Object> map = new HashMap();
             if (EmptyUtils.isEmpty(vo.getHotelId())) {
                 return DtoUtil.returnFail("酒店ID不能为空", "100303");
             }
@@ -104,7 +90,7 @@ public class HotelRoomController {
                     return DtoUtil.returnFail("入住时间不能大于退房时间", "100303");
                 }
                 List<Date> dates = DateUtil.getBetweenDates(vo.getStartDate(), vo.getEndDate());
-                param.put("timesList", dates);
+                map.put("timesList", dates);
             }
 
             vo.setIsHavingBreakfast(EmptyUtils.isEmpty(vo.getIsHavingBreakfast()) ? null : vo.getIsHavingBreakfast());
@@ -114,18 +100,18 @@ public class HotelRoomController {
             vo.setIsCancel(EmptyUtils.isEmpty(vo.getIsCancel()) ? null : vo.getIsCancel());
             vo.setPayType(EmptyUtils.isEmpty(vo.getPayType()) ? null : vo.getPayType());
 
-            param.put("hotelId", vo.getHotelId());
-            param.put("isBook", vo.getIsBook());
-            param.put("isHavingBreakfast", vo.getIsHavingBreakfast());
-            param.put("isTimelyResponse", vo.getIsTimelyResponse());
-            param.put("roomBedTypeId", vo.getRoomBedTypeId());
-            param.put("isCancel", vo.getIsCancel());
+            map.put("hotelId", vo.getHotelId());
+            map.put("isBook", vo.getIsBook());
+            map.put("isHavingBreakfast", vo.getIsHavingBreakfast());
+            map.put("isTimelyResponse", vo.getIsTimelyResponse());
+            map.put("roomBedTypeId", vo.getRoomBedTypeId());
+            map.put("isCancel", vo.getIsCancel());
             if(EmptyUtils.isEmpty(vo.getPayType()) || vo.getPayType()==3){
-                param.put("payType", null);
+                map.put("payType", null);
             }else{
-                param.put("payType", vo.getPayType());
+                map.put("payType", vo.getPayType());
             }
-            List<ItripHotelRoomVO> originalRoomList = itripHotelRoomService.getItripHotelRoomListByMap(param);
+            List<ItripHotelRoomVO> originalRoomList = itripHotelRoomService.getItripHotelRoomListByMap(map);
             hotelRoomVOList = new ArrayList();
             for (ItripHotelRoomVO roomVO : originalRoomList) {
                 List<ItripHotelRoomVO> tempList = new ArrayList<ItripHotelRoomVO>();
@@ -149,7 +135,7 @@ public class HotelRoomController {
     @ResponseBody
     public Dto<Object> queryHotelRoomBed() {
         try {
-            List<ItripLabelDicVO> itripLabelDicList = itripLabelDicService.getItripLabelDicByParentId(new Long(1));
+            List<ItripLabelDicVO> itripLabelDicList = itripLabelDicService.getItripLabelDicByParentId(1L);
             return DtoUtil.returnSuccess("获取成功", itripLabelDicList);
         } catch (Exception e) {
             e.printStackTrace();

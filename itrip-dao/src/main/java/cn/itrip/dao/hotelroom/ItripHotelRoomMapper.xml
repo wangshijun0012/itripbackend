@@ -72,7 +72,7 @@
             <if test="isTimelyResponse != null">
                 and isTimelyResponse=#{isTimelyResponse}
             </if>
-            <if test="timesList!=null and timesList!=''">
+            <if test="timesList!=null">
                 AND
                 <foreach item="item" index="index" collection="timesList" open="(" separator="AND" close=")">
                     (

@@ -19,9 +19,7 @@ import cn.itrip.service.comment.ItripCommentService;
 import cn.itrip.service.hotel.ItripHotelService;
 import cn.itrip.service.image.ItripImageService;
 import cn.itrip.service.labeldic.ItripLabelDicService;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
+import io.swagger.annotations.*;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -36,25 +34,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-/**
- * 评论Controller
- *
- * 包括API接口：
- * 1、根据type 和target id 查询评论照片
- * 2、据酒店id查询酒店平均分（总体评分、位置评分、设施评分、服务评分、卫生评分）
- * 3、根据酒店id查询评论数量
- * 4、根据评论类型查询评论 分页
- * 5、上传评论图片
- * 6、删除评论图片
- * 7、新增评论信息
- * 8、查看个人评论信息
- * 9、查询出游类型列表
- * 10、新增评论信息页面获取酒店相关信息（酒店名称、酒店图片、酒店星级）
- *
- * 注：错误码（100001 ——100100）
- *
- * Created by hanlu on 2017/5/9.
- */
 @Controller
 @Api(value = "API", basePath = "/http://api.itrap.com/api")
 @RequestMapping(value="/api/comment")

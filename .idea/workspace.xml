@@ -10,7 +10,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce51f438-54fb-4b4d-a8b2-9afd93b720ed" name="Default Changelist" comment="" />
+    <list default="true" id="ce51f438-54fb-4b4d-a8b2-9afd93b720ed" name="Default Changelist" comment="1、修复了token生效时间过短的问题&#10;2、biz模块进行了整改，目前正在进行重写订单，其他很多是网上的源代码，目前没有发现错误">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/HotelOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/HotelOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/HotelRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/HotelRoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/SystemCommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/SystemCommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/UserInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-dao/src/main/java/cn/itrip/dao/hotelroom/ItripHotelRoomMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-dao/src/main/java/cn/itrip/dao/hotelroom/ItripHotelRoomMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-dao/src/main/java/cn/itrip/dao/hoteltempstore/ItripHotelTempStoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-dao/src/main/java/cn/itrip/dao/hoteltempstore/ItripHotelTempStoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,14 +86,25 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/itrip-search/src/main/webapp/WEB-INF" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-biz\src\main\resources" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-biz\src\main\java\cn" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-dao\src\main\java\cn\itrip" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-beans\src\main\java\cn\itrip\beans" />
+      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-auth\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.itrip.auth.controller" />
+      <recent name="cn.itrip.search.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-search\src\main\webapp\WEB-INF" />
@@ -88,16 +112,6 @@
       <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-search\src\main\java\cn\itrip\search" />
       <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-search\src\main\resources" />
       <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-auth\src\main\java\cn\itrip\auth\controller" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.itrip.search.controller" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-biz\src\main\resources" />
-      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-biz\src\main\java\cn" />
-      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-dao\src\main\java\cn\itrip" />
-      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-beans\src\main\java\cn\itrip\beans" />
-      <recent name="C:\Users\wangshijun\IdeaProjects\ssmreview\itripbackend\itrip-auth\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.29">
@@ -277,7 +291,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -323,7 +337,9 @@
       <workItem from="1582263879310" duration="9521000" />
       <workItem from="1582283528718" duration="736000" />
       <workItem from="1582503981818" duration="11524000" />
-      <workItem from="1583457169151" duration="8529000" />
+      <workItem from="1583457169151" duration="18141000" />
+      <workItem from="1583632518731" duration="2653000" />
+      <workItem from="1583713329455" duration="6495000" />
     </task>
     <task id="LOCAL-00001" summary="多模块搭建">
       <created>1580984351322</created>
@@ -381,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583465649174</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1、修复了token生效时间过短的问题&#10;2、biz模块进行了整改，目前正在进行重写订单，其他很多是网上的源代码，目前没有发现错误">
+      <created>1583465759129</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583465759129</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,6 +497,21 @@
         <option value="3" />
       </set>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -493,10 +531,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="571" y="88" key="#HTTP_Proxy/0.0.1536.864@0.0.1536.864" timestamp="1581748980253" />
-    <state x="361" y="94" key="#Project_Structure" timestamp="1583389289676">
+    <state x="361" y="94" width="994" height="676" key="#Project_Structure" timestamp="1583468943061">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="94" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1583389289676" />
+    <state x="361" y="94" width="994" height="676" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1583468943061" />
+    <state x="361" y="94" key="#SQL_Dialects" timestamp="1583633919743">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="94" key="#SQL_Dialects/0.0.1536.864@0.0.1536.864" timestamp="1583633919743" />
     <state x="338" y="93" key="#Tomcat_Server" timestamp="1581658791461">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -537,10 +579,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="516" y="314" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1581751374293" />
-    <state x="270" y="33" width="923" height="690" key="CommitChangelistDialog2" timestamp="1583465647424">
+    <state x="270" y="33" width="923" height="690" key="CommitChangelistDialog2" timestamp="1583467363996">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="270" y="33" width="923" height="690" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583465647424" />
+    <state x="270" y="33" width="923" height="690" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583467363996" />
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1581661847743">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -553,78 +595,82 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="631" y="328" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1580984646888" />
-    <state width="1297" height="192" key="GridCell.Tab.0.bottom" timestamp="1583404003970">
+    <state width="1493" height="241" key="GridCell.Tab.0.bottom" timestamp="1583719324586">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1342" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287683" />
-    <state width="1297" height="192" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583404003970" />
-    <state width="1297" height="192" key="GridCell.Tab.0.center" timestamp="1583404003970">
+    <state width="1493" height="241" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583719324586" />
+    <state width="1493" height="241" key="GridCell.Tab.0.center" timestamp="1583719324586">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1342" height="203" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287683" />
-    <state width="1297" height="192" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583404003970" />
-    <state width="1297" height="192" key="GridCell.Tab.0.left" timestamp="1583404003970">
+    <state width="1493" height="241" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583719324586" />
+    <state width="1493" height="241" key="GridCell.Tab.0.left" timestamp="1583719324586">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1342" height="203" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287683" />
-    <state width="1297" height="192" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583404003970" />
-    <state width="1297" height="192" key="GridCell.Tab.0.right" timestamp="1583404003970">
+    <state width="1493" height="241" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583719324586" />
+    <state width="1493" height="241" key="GridCell.Tab.0.right" timestamp="1583719324586">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1342" height="203" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287683" />
-    <state width="1297" height="192" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583404003970" />
-    <state width="1297" height="192" key="GridCell.Tab.1.bottom" timestamp="1583404003971">
+    <state width="1493" height="241" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583719324586" />
+    <state width="1297" height="285" key="GridCell.Tab.1.bottom" timestamp="1583718892762">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.1.bottom/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
-    <state width="1297" height="192" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583404003971" />
-    <state width="1297" height="192" key="GridCell.Tab.1.center" timestamp="1583404003971">
+    <state width="1297" height="285" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
+    <state width="1297" height="285" key="GridCell.Tab.1.center" timestamp="1583718892762">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.1.center/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
-    <state width="1297" height="192" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1583404003971" />
-    <state width="1297" height="192" key="GridCell.Tab.1.left" timestamp="1583404003971">
+    <state width="1297" height="285" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
+    <state width="1297" height="285" key="GridCell.Tab.1.left" timestamp="1583718892762">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.1.left/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
-    <state width="1297" height="192" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1583404003971" />
-    <state width="1297" height="192" key="GridCell.Tab.1.right" timestamp="1583404003971">
+    <state width="1297" height="285" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
+    <state width="1297" height="285" key="GridCell.Tab.1.right" timestamp="1583718892762">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.1.right/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
-    <state width="1297" height="192" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1583404003971" />
-    <state width="1297" height="192" key="GridCell.Tab.2.bottom" timestamp="1583404003971">
+    <state width="1297" height="285" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
+    <state width="1297" height="285" key="GridCell.Tab.2.bottom" timestamp="1583718892763">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.2.bottom/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287677" />
-    <state width="1297" height="192" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583404003971" />
-    <state width="1297" height="192" key="GridCell.Tab.2.center" timestamp="1583404003971">
+    <state width="1297" height="285" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583718892763" />
+    <state width="1297" height="285" key="GridCell.Tab.2.center" timestamp="1583718892762">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.2.center/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287677" />
-    <state width="1297" height="192" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1583404003971" />
-    <state width="1297" height="192" key="GridCell.Tab.2.left" timestamp="1583404003971">
+    <state width="1297" height="285" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
+    <state width="1297" height="285" key="GridCell.Tab.2.left" timestamp="1583718892762">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.2.left/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
-    <state width="1297" height="192" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1583404003971" />
-    <state width="1297" height="192" key="GridCell.Tab.2.right" timestamp="1583404003971">
+    <state width="1297" height="285" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
+    <state width="1297" height="285" key="GridCell.Tab.2.right" timestamp="1583718892762">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.2.right/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287677" />
-    <state width="1297" height="192" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1583404003971" />
+    <state width="1297" height="285" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
     <state x="442" y="114" key="Maven.ArtifactSearchDialog" timestamp="1581067213702">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="442" y="114" key="Maven.ArtifactSearchDialog/0.0.1536.864@0.0.1536.864" timestamp="1581067213702" />
+    <state x="477" y="149" key="MultipleFileMergeDialog" timestamp="1583465795777">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="477" y="149" key="MultipleFileMergeDialog/0.0.1536.864@0.0.1536.864" timestamp="1583465795777" />
     <state x="69" y="65" width="1187" height="709" key="SettingsEditor" timestamp="1582274808514">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="69" y="65" width="1187" height="709" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1582274808514" />
-    <state x="354" y="139" key="Vcs.Push.Dialog.v2" timestamp="1583465701647">
+    <state x="354" y="139" key="Vcs.Push.Dialog.v2" timestamp="1583467398980">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="354" y="139" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583465701647" />
+    <state x="354" y="139" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583467398980" />
     <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1583394649633">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
