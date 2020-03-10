@@ -10,17 +10,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce51f438-54fb-4b4d-a8b2-9afd93b720ed" name="Default Changelist" comment="1、修复了token生效时间过短的问题&#10;2、biz模块进行了整改，目前正在进行重写订单，其他很多是网上的源代码，目前没有发现错误">
+    <list default="true" id="ce51f438-54fb-4b4d-a8b2-9afd93b720ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/TimeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-auth/src/main/java/cn/itrip/auth/controller/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/HotelOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/HotelOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/HotelRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/HotelRoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/SystemCommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/SystemCommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/controller/UserInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itrip-dao/src/main/java/cn/itrip/dao/hotelroom/ItripHotelRoomMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-dao/src/main/java/cn/itrip/dao/hotelroom/ItripHotelRoomMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/service/hotelorder/ItripHotelOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/service/hotelorder/ItripHotelOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/service/hotelorder/ItripHotelOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/java/cn/itrip/service/hotelorder/ItripHotelOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-biz/src/main/resources/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-biz/src/main/resources/springmvc-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-dao/src/main/java/cn/itrip/dao/hotelorder/ItripHotelOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-dao/src/main/java/cn/itrip/dao/hotelorder/ItripHotelOrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itrip-dao/src/main/java/cn/itrip/dao/hoteltempstore/ItripHotelTempStoreMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-dao/src/main/java/cn/itrip/dao/hoteltempstore/ItripHotelTempStoreMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itrip-dao/src/main/java/cn/itrip/dao/hoteltempstore/ItripHotelTempStoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itrip-dao/src/main/java/cn/itrip/dao/hoteltempstore/ItripHotelTempStoreMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -288,11 +286,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -339,7 +332,10 @@
       <workItem from="1582503981818" duration="11524000" />
       <workItem from="1583457169151" duration="18141000" />
       <workItem from="1583632518731" duration="2653000" />
-      <workItem from="1583713329455" duration="6495000" />
+      <workItem from="1583713329455" duration="12184000" />
+      <workItem from="1583800528150" duration="5755000" />
+      <workItem from="1583817832221" duration="6038000" />
+      <workItem from="1583825086278" duration="1857000" />
     </task>
     <task id="LOCAL-00001" summary="多模块搭建">
       <created>1580984351322</created>
@@ -404,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583465759129</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1、biz模块相对完善了一下&#10;2、修复了mapper文件中的一些错误&#10;3、修复了数据库‘存储过程’中的找不到用户的问题&#10;4、完善了swagger的功能，使得所有接口均可选填token信息，便于测试">
+      <created>1583732182137</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583732182137</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,7 +527,9 @@
     <MESSAGE value="1、重新上传beans" />
     <MESSAGE value="1、完善了swagger的注释及测试功能，使用swagger可以代替postman对接口进行测试。&#10;2、修复了auth模块的一个低级错误，将业务层名字serivice改回service。&#10;3、将mail功能的配置从applicationContext.xml中分离出来，独立成sping-mail.xml配置文件。&#10;4、添加了search模块的代码。" />
     <MESSAGE value="1、修复了token生效时间过短的问题&#10;2、biz模块进行了整改，目前正在进行重写订单，其他很多是网上的源代码，目前没有发现错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、修复了token生效时间过短的问题&#10;2、biz模块进行了整改，目前正在进行重写订单，其他很多是网上的源代码，目前没有发现错误" />
+    <MESSAGE value="1、biz模块相对完善了一下&#10;2、修复了mapper文件中的一些错误&#10;3、修复了数据库‘存储过程’中的找不到用户的问题" />
+    <MESSAGE value="1、biz模块相对完善了一下&#10;2、修复了mapper文件中的一些错误&#10;3、修复了数据库‘存储过程’中的找不到用户的问题&#10;4、完善了swagger的功能，使得所有接口均可选填token信息，便于测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、biz模块相对完善了一下&#10;2、修复了mapper文件中的一些错误&#10;3、修复了数据库‘存储过程’中的找不到用户的问题&#10;4、完善了swagger的功能，使得所有接口均可选填token信息，便于测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="571" y="88" key="#HTTP_Proxy" timestamp="1581748980253">
@@ -547,10 +552,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="201" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1583394031896" />
-    <state x="282" y="182" key="#com.intellij.ide.util.MemberChooser" timestamp="1582190644693">
+    <state x="282" y="182" key="#com.intellij.ide.util.MemberChooser" timestamp="1583804957647">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="282" y="182" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1582190644693" />
+    <state x="282" y="182" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1583804957647" />
     <state x="736" y="365" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581658393464">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -579,10 +584,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="516" y="314" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1581751374293" />
-    <state x="270" y="33" width="923" height="690" key="CommitChangelistDialog2" timestamp="1583467363996">
+    <state x="270" y="33" width="923" height="690" key="CommitChangelistDialog2" timestamp="1583732179874">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="270" y="33" width="923" height="690" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583467363996" />
+    <state x="270" y="33" width="923" height="690" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583732179874" />
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1581661847743">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -595,66 +600,66 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="631" y="328" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1580984646888" />
-    <state width="1493" height="241" key="GridCell.Tab.0.bottom" timestamp="1583719324586">
+    <state width="1297" height="16" key="GridCell.Tab.0.bottom" timestamp="1583825070039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1342" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287683" />
-    <state width="1493" height="241" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583719324586" />
-    <state width="1493" height="241" key="GridCell.Tab.0.center" timestamp="1583719324586">
+    <state width="1297" height="16" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583825070039" />
+    <state width="1297" height="16" key="GridCell.Tab.0.center" timestamp="1583825070039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1342" height="203" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287683" />
-    <state width="1493" height="241" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583719324586" />
-    <state width="1493" height="241" key="GridCell.Tab.0.left" timestamp="1583719324586">
+    <state width="1297" height="16" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583825070039" />
+    <state width="1297" height="16" key="GridCell.Tab.0.left" timestamp="1583825070039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1342" height="203" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287683" />
-    <state width="1493" height="241" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583719324586" />
-    <state width="1493" height="241" key="GridCell.Tab.0.right" timestamp="1583719324586">
+    <state width="1297" height="16" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583825070039" />
+    <state width="1297" height="16" key="GridCell.Tab.0.right" timestamp="1583825070039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1342" height="203" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287683" />
-    <state width="1493" height="241" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583719324586" />
-    <state width="1297" height="285" key="GridCell.Tab.1.bottom" timestamp="1583718892762">
+    <state width="1297" height="16" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583825070039" />
+    <state width="1297" height="16" key="GridCell.Tab.1.bottom" timestamp="1583825070039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.1.bottom/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
-    <state width="1297" height="285" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
-    <state width="1297" height="285" key="GridCell.Tab.1.center" timestamp="1583718892762">
+    <state width="1297" height="16" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583825070039" />
+    <state width="1297" height="16" key="GridCell.Tab.1.center" timestamp="1583825070039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.1.center/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
-    <state width="1297" height="285" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
-    <state width="1297" height="285" key="GridCell.Tab.1.left" timestamp="1583718892762">
+    <state width="1297" height="16" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1583825070039" />
+    <state width="1297" height="16" key="GridCell.Tab.1.left" timestamp="1583825070039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.1.left/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
-    <state width="1297" height="285" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
-    <state width="1297" height="285" key="GridCell.Tab.1.right" timestamp="1583718892762">
+    <state width="1297" height="16" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1583825070039" />
+    <state width="1297" height="16" key="GridCell.Tab.1.right" timestamp="1583825070039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.1.right/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
-    <state width="1297" height="285" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
-    <state width="1297" height="285" key="GridCell.Tab.2.bottom" timestamp="1583718892763">
+    <state width="1297" height="16" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1583825070039" />
+    <state width="1297" height="16" key="GridCell.Tab.2.bottom" timestamp="1583825070039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.2.bottom/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287677" />
-    <state width="1297" height="285" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583718892763" />
-    <state width="1297" height="285" key="GridCell.Tab.2.center" timestamp="1583718892762">
+    <state width="1297" height="16" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583825070039" />
+    <state width="1297" height="16" key="GridCell.Tab.2.center" timestamp="1583825070039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.2.center/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287677" />
-    <state width="1297" height="285" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
-    <state width="1297" height="285" key="GridCell.Tab.2.left" timestamp="1583718892762">
+    <state width="1297" height="16" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1583825070039" />
+    <state width="1297" height="16" key="GridCell.Tab.2.left" timestamp="1583825070039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.2.left/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287676" />
-    <state width="1297" height="285" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
-    <state width="1297" height="285" key="GridCell.Tab.2.right" timestamp="1583718892762">
+    <state width="1297" height="16" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1583825070039" />
+    <state width="1297" height="16" key="GridCell.Tab.2.right" timestamp="1583825070039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1297" height="244" key="GridCell.Tab.2.right/0.0.1536.864/1920.0.1600.1200@0.0.1536.864" timestamp="1582283287677" />
-    <state width="1297" height="285" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1583718892762" />
+    <state width="1297" height="16" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1583825070039" />
     <state x="442" y="114" key="Maven.ArtifactSearchDialog" timestamp="1581067213702">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -667,10 +672,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="69" y="65" width="1187" height="709" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1582274808514" />
-    <state x="354" y="139" key="Vcs.Push.Dialog.v2" timestamp="1583467398980">
+    <state x="354" y="139" key="Vcs.Push.Dialog.v2" timestamp="1583732185126">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="354" y="139" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583467398980" />
+    <state x="354" y="139" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583732185126" />
     <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1583394649633">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

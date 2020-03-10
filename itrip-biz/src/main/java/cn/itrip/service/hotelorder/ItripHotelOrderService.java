@@ -1,14 +1,14 @@
 package cn.itrip.service.hotelorder;
+
 import cn.itrip.beans.pojo.ItripHotelOrder;
-
-import java.math.BigDecimal;
-import java.util.List;
-import java.util.Map;
-
 import cn.itrip.beans.pojo.ItripUserLinkUser;
 import cn.itrip.beans.vo.order.ItripListHotelOrderVO;
 import cn.itrip.beans.vo.order.ItripPersonalOrderRoomVO;
 import cn.itrip.common.Page;
+
+import java.math.BigDecimal;
+import java.util.List;
+import java.util.Map;
 /**
 * Created by shang-pc on 2015/11/7.
 */
@@ -66,5 +66,6 @@ public interface ItripHotelOrderService {
      */
     public ItripPersonalOrderRoomVO getItripHotelOrderRoomInfoById(Long orderId)throws Exception;
 
+    public boolean validationRoomStore(Map map) throws  Exception;
 
 }

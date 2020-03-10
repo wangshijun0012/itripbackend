@@ -1,8 +1,12 @@
 package cn.itrip.service.hotelorder;
 
-import cn.itrip.beans.pojo.*;
+import cn.itrip.beans.pojo.ItripHotelOrder;
+import cn.itrip.beans.pojo.ItripHotelTempStore;
+import cn.itrip.beans.pojo.ItripOrderLinkUser;
+import cn.itrip.beans.pojo.ItripUserLinkUser;
 import cn.itrip.beans.vo.order.ItripListHotelOrderVO;
 import cn.itrip.beans.vo.order.ItripPersonalOrderRoomVO;
+import cn.itrip.beans.vo.store.StoreVO;
 import cn.itrip.common.*;
 import cn.itrip.dao.hotelorder.ItripHotelOrderMapper;
 import cn.itrip.dao.hotelroom.ItripHotelRoomMapper;
@@ -13,7 +17,10 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
-import java.util.*;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static java.math.BigDecimal.ROUND_DOWN;
 
@@ -34,6 +41,32 @@ public class ItripHotelOrderServiceImpl implements ItripHotelOrderService {
 
     @Resource
     private ItripOrderLinkUserMapper itripOrderLinkUserMapper;
+
+
+    @Override
+    public boolean validationRoomStore(Map map) throws  Exception{
+        List<Date> dateList = DateUtil.getBetweenDates((Date)map.get("startTime"),(Date)map.get("endTime"));
+        for(Date date : dateList){
+            map.put("time",date);
+            ItripHotelTempStore tempStore = itripHotelTempStoreMapper.queryByTime(map);
+            if(tempStore == null){
+                ItripHotelTempStore store = new ItripHotelTempStore();
+                store.setHotelId((Integer)map.get("hotelId"));
+                store.setRoomId((Long)map.get("roomId"));
+                store.setStore(20);
+                store.setRecordDate(date);
+                store.setCreationDate(new Date());
+                itripHotelTempStoreMapper.insertItripHotelTempStore(store);
+            }
+            List<StoreVO> list = itripHotelTempStoreMapper.queryRoomStore(map);
+            for(StoreVO vo : list){
+                if(vo.getStore() < (Integer) map.get("count")){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 
 
     @Override
@@ -209,4 +242,5 @@ public class ItripHotelOrderServiceImpl implements ItripHotelOrderService {
     public ItripPersonalOrderRoomVO getItripHotelOrderRoomInfoById(Long orderId) throws Exception {
         return itripHotelOrderMapper.getItripHotelOrderRoomInfoById(orderId);
     }
+
 }

@@ -1,4 +1,5 @@
 package cn.itrip.dao.hotelorder;
+
 import cn.itrip.beans.pojo.ItripHotelOrder;
 import cn.itrip.beans.vo.order.ItripListHotelOrderVO;
 import cn.itrip.beans.vo.order.ItripPersonalOrderRoomVO;
@@ -55,5 +56,7 @@ public interface ItripHotelOrderMapper {
 	 * @throws Exception
 	 */
 	public Integer flushSuccessOrderStatus()throws Exception;
+
+
 
 }

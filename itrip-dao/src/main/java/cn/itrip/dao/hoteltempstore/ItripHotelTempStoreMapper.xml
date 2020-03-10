@@ -167,7 +167,11 @@
           )
         }
     </update >
-
+    <select id = "queryByTime" resultType="cn.itrip.beans.pojo.ItripHotelTempStore">
+        select id,hotelId,roomId from itrip_hotel_temp_store
+        where hotelId = #{hotelId} and roomId = #{roomId}
+        and recordDate = DATE_FORMAT(#{time},'%Y-%m-%d')
+    </select>
     <select id="queryRoomStore" resultType="cn.itrip.beans.vo.store.StoreVO"  parameterType="java.util.Map">
               SELECT A.roomId,A.recordDate,A.store from (
               SELECT
@@ -184,7 +188,7 @@
 	                ) AS store
                     FROM
                         itrip_hotel_temp_store store
-                    LEFT JOIN itrip_hotel_order ord ON store.roomId = ord.roomId AND ord.orderStatus = 0
+                    LEFT JOIN itrip_hotel_order ord ON store.roomId = ord.roomId AND ( ord.orderStatus = 0 or ord.orderStatus = 2 )
                     AND DATE_FORMAT(store.recordDate,'%Y-%m-%d') BETWEEN DATE_FORMAT(ord.checkInDate, '%Y-%m-%d') AND DATE_FORMAT(ord.checkOutDate,'%Y-%m-%d')
                     WHERE   store.roomId = #{roomId}
                     GROUP BY  store.roomId,store.recordDate) AS A

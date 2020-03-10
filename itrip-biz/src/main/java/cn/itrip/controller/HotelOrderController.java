@@ -77,21 +77,19 @@ public class HotelOrderController {
         HashMap<String, Object> map = new HashMap<>();
         map.put("hotelId",vo.getHotelId());
         map.put("roomId",vo.getRoomId());
-        map.put("checkInDate",EmptyUtils.isEmpty(vo.getCheckInDate()) ? null : vo.getCheckInDate());
-        map.put("checkOutDate",EmptyUtils.isEmpty(vo.getCheckOutDate()) ? null : vo.getCheckOutDate());
+        map.put("startTime",EmptyUtils.isEmpty(vo.getCheckInDate()) ? null : vo.getCheckInDate());
+        map.put("endTime",EmptyUtils.isEmpty(vo.getCheckOutDate()) ? null : vo.getCheckOutDate());
         map.put("count",EmptyUtils.isEmpty(vo.getCount()) ? 1 : vo.getCount());
         boolean flag = false;
         try {
-            flag = tempStoreService.validateRoomStore(map);
+            flag = itripHotelOrderService.validationRoomStore(map);
         } catch (Exception e) {
             e.printStackTrace();
             return DtoUtil.returnFail("系统异常","100517");
         }
+        map.clear();
         map.put("flag", flag);
         return DtoUtil.returnSuccess("操作成功", map);
-
-
-
     }
     @ApiOperation(value = "根据订单ID查看个人订单详情",httpMethod = "GET",response = Dto.class)
     @RequestMapping(value = "/getpersonalorderinfo/{orderId}",method = RequestMethod.GET)
@@ -114,7 +112,6 @@ public class HotelOrderController {
             return DtoUtil.returnFail("没有相关订单信息","100526");
         }
         ItripPersonalHotelOrderVO orderVO = new ItripPersonalHotelOrderVO();
-        BeanUtils.copyProperties(order,orderVO);
         //查询房间预定信息
         if(!EmptyUtils.isEmpty(order.getRoomId())){
             try {
@@ -130,21 +127,28 @@ public class HotelOrderController {
         //{"1":"订单提交","2":"订单支付","3":"订单取消"}
         Integer orderStatus = order.getOrderStatus();
         BeanUtils.copyProperties(order,orderVO);
+        Object ok = JSONArray.parse(systemConfig.getOrderProcessOK());
+        Object cancel = JSONArray.parse(systemConfig.getOrderProcessCancel());
         if (orderStatus == 1) {
-            orderVO.setOrderProcess(JSONArray.parse(systemConfig.getOrderProcessCancel()));
+            orderVO.setOrderProcess(cancel);
+            //取消订单
             orderVO.setProcessNode("3");
         } else if (orderStatus == 0) {
-            orderVO.setOrderProcess(JSONArray.parse(systemConfig.getOrderProcessOK()));
-            orderVO.setProcessNode("2");//订单支付
+            orderVO.setOrderProcess(ok);
+            //订单支付
+            orderVO.setProcessNode("2");
         } else if (orderStatus == 2) {
-            orderVO.setOrderProcess(JSONArray.parse(systemConfig.getOrderProcessOK()));
-            orderVO.setProcessNode("3");//支付成功（未出行）
+            orderVO.setOrderProcess(ok);
+            //支付成功（未出行）
+            orderVO.setProcessNode("3");
         } else if (orderStatus == 3) {
-            orderVO.setOrderProcess(JSONArray.parse(systemConfig.getOrderProcessOK()));
-            orderVO.setProcessNode("5");//订单点评
+            orderVO.setOrderProcess(ok);
+            //订单点评
+            orderVO.setProcessNode("5");
         } else if (orderStatus == 4) {
-            orderVO.setOrderProcess(JSONArray.parse(systemConfig.getOrderProcessOK()));
-            orderVO.setProcessNode("6");//订单完成
+            orderVO.setOrderProcess(ok);
+            //订单完成
+            orderVO.setProcessNode("6");
         } else {
             orderVO.setOrderProcess(null);
             orderVO.setProcessNode(null);
